@@ -35,7 +35,7 @@
             this.buttonMultiply = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.resultLable = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonAdd
@@ -47,6 +47,7 @@
             this.buttonAdd.TabIndex = 0;
             this.buttonAdd.Text = "+";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
             // textBox1
             // 
@@ -54,6 +55,8 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(159, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "0";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // buttonMinus
             // 
@@ -64,6 +67,7 @@
             this.buttonMinus.TabIndex = 0;
             this.buttonMinus.Text = "-";
             this.buttonMinus.UseVisualStyleBackColor = true;
+            this.buttonMinus.Click += new System.EventHandler(this.ButtonMinus_Click);
             // 
             // buttonDevide
             // 
@@ -74,6 +78,7 @@
             this.buttonDevide.TabIndex = 0;
             this.buttonDevide.Text = "/";
             this.buttonDevide.UseVisualStyleBackColor = true;
+            this.buttonDevide.Click += new System.EventHandler(this.ButtonDevide_Click);
             // 
             // buttonMultiply
             // 
@@ -84,6 +89,7 @@
             this.buttonMultiply.TabIndex = 0;
             this.buttonMultiply.Text = "*";
             this.buttonMultiply.UseVisualStyleBackColor = true;
+            this.buttonMultiply.Click += new System.EventHandler(this.ButtonMultiply_Click);
             // 
             // textBox2
             // 
@@ -91,6 +97,8 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(159, 20);
             this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "0";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label1
             // 
@@ -101,13 +109,14 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Результат:";
             // 
-            // label2
+            // resultLable
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 221);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
-            this.label2.TabIndex = 2;
+            this.resultLable.AutoSize = true;
+            this.resultLable.Location = new System.Drawing.Point(26, 221);
+            this.resultLable.Name = "resultLable";
+            this.resultLable.Size = new System.Drawing.Size(13, 13);
+            this.resultLable.TabIndex = 2;
+            this.resultLable.Text = "0";
             // 
             // Form1
             // 
@@ -115,7 +124,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(330, 290);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.resultLable);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -139,7 +148,7 @@
         private System.Windows.Forms.Button buttonMultiply;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label resultLable;
     }
 }
 
