@@ -56,6 +56,7 @@
             this.textBox1.Size = new System.Drawing.Size(159, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // Subtraction
             // 
@@ -115,13 +116,14 @@
             this.resultLable.Size = new System.Drawing.Size(13, 13);
             this.resultLable.TabIndex = 2;
             this.resultLable.Text = "0";
+            this.resultLable.Click += new System.EventHandler(this.CalculateClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ClientSize = new System.Drawing.Size(330, 290);
+            this.ClientSize = new System.Drawing.Size(212, 256);
             this.Controls.Add(this.resultLable);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);

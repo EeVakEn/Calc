@@ -22,23 +22,15 @@ namespace OOPCalculator
         {
             double firstNumber = Convert.ToDouble(textBox1.Text);
             double secondNumber = Convert.ToDouble(textBox2.Text);
-            double result;
 
-            switch (((Button)sender).Name)
-            {
-                case "Add":
-                    result = firstNumber + secondNumber; break;
-                case "Subtraction":
-                    result = firstNumber - secondNumber; break;
-                case "Divide":
-                    result = firstNumber / secondNumber; break;
-                case "Multiply":
-                    result = firstNumber * secondNumber; break;
-                default: throw new Exception("Неизвестная операция");
-
-            }
-
+            var calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
+            var result = calculator.Calculate(firstNumber, secondNumber);
             resultLable.Text = Convert.ToString(result);
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
