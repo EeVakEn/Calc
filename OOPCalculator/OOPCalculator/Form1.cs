@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.ExceptionServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,36 +18,27 @@ namespace OOPCalculator
             InitializeComponent();
         }
 
-        private void ButtonAdd_Click(object sender, EventArgs e)
+        private void CalculateClick(object sender, EventArgs e)
         {
-            double a = Convert.ToDouble(textBox1.Text);
-            double b = Convert.ToDouble(textBox2.Text);
-            double res = a + b;
-            resultLable.Text = Convert.ToString(res);
-        }
+            double firstNumber = Convert.ToDouble(textBox1.Text);
+            double secondNumber = Convert.ToDouble(textBox2.Text);
+            double result;
 
-        private void ButtonMinus_Click(object sender, EventArgs e)
-        {
-            double a = Convert.ToDouble(textBox1.Text);
-            double b = Convert.ToDouble(textBox2.Text);
-            double res = a - b;
-            resultLable.Text = Convert.ToString(res);
-        }
+            switch (((Button)sender).Name)
+            {
+                case "Add":
+                    result = firstNumber + secondNumber; break;
+                case "Subtraction":
+                    result = firstNumber - secondNumber; break;
+                case "Divide":
+                    result = firstNumber / secondNumber; break;
+                case "Multiply":
+                    result = firstNumber * secondNumber; break;
+                default: throw new Exception("Неизвестная операция");
 
-        private void ButtonDevide_Click(object sender, EventArgs e)
-        {
-            double a = Convert.ToDouble(textBox1.Text);
-            double b = Convert.ToDouble(textBox2.Text);
-            double res = a / b;
-            resultLable.Text = Convert.ToString(res);
-        }
+            }
 
-        private void ButtonMultiply_Click(object sender, EventArgs e)
-        {
-            double a = Convert.ToDouble(textBox1.Text);
-            double b = Convert.ToDouble(textBox2.Text);
-            double res = a * b;
-            resultLable.Text = Convert.ToString(res);
+            resultLable.Text = Convert.ToString(result);
         }
     }
 }
