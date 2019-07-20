@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPCalculator
+namespace OOPCalculator.OneArgumentsFunction
 {
-    public interface ITwoArgumentsCalculator
+    public interface I1ArgumentCalculator
     {
-        double Calculator(double firstValue, double secondValue);
+        double Calculate(double firstValue);
     }
 }

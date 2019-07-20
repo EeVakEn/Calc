@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPCalculator
+namespace OOPCalculator.TwoArgumentsFunctions
 {
-    public class AdditionCalculator:ITwoArgumentsCalculator
+    class GeometryMean : ITwoArgumentsCalculator
     {
         public double Calculator(double firstValue, double secondValue)
         {
-            return firstValue + secondValue;
+            return Math.Pow(firstValue * secondValue, 1.0 / 2.0);
         }
     }
 }

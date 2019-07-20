@@ -8,7 +8,7 @@ namespace OOPCalculator
 {
     public class MultplyCalculator : ITwoArgumentsCalculator
     {
-        public double Calculate(double firstValue, double secondValue)
+        public double Calculator(double firstValue, double secondValue)
         {
             return firstValue * secondValue;
         }
