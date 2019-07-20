@@ -7,7 +7,7 @@ using OOPCalculator.TwoArgumentsFunctions;
 
 namespace OOPCalculator
 {
-    class TwoArgumentsFactory
+    class TwoArgumentFactory
     {
        public  static  ITwoArgumentsCalculator CreateCalculator(string Name)
 

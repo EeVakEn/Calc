@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPCalculator.TwoArgumentsFunctions
 {
-    class GeometryMean : ITwoArgumentsCalculator
+    public class GeometryMean : ITwoArgumentsCalculator
     {
         public double Calculator(double firstValue, double secondValue)
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPCalculator.TwoArgumentsFunctions
 {
-    class XInY : ITwoArgumentsCalculator
+    public class XInY : ITwoArgumentsCalculator
     {
         public double Calculator(double firstValue, double secondValue)
         {

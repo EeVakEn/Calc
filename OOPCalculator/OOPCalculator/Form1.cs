@@ -24,7 +24,7 @@ namespace OOPCalculator
             double firstNumber = Convert.ToDouble(textBox1.Text);
             double secondNumber = Convert.ToDouble(textBox2.Text);
 
-            var calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
+            var calculator = TwoArgumentFactory.CreateCalculator(((Button)sender).Name);
             var result = calculator.Calculator(firstNumber, secondNumber);
             resultLable.Text = Convert.ToString(result);
         }
