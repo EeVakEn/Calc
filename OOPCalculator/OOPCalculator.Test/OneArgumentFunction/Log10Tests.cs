@@ -20,5 +20,11 @@ namespace OOPCalculator.Test.OneArgumentFunction
             var actualResult = calculator.Calculate(arOne);
             Assert.AreEqual(expected, actualResult, 0.01);
         }
+        [Test]
+        public void NegativeCalculateTest()
+        {
+            var calculator = new Log10();
+            Assert.Throws<System.Exception>(() => calculator.Calculate(-4));
+        }
     }
 }

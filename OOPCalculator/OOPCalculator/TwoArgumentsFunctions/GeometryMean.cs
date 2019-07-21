@@ -10,6 +10,10 @@ namespace OOPCalculator.TwoArgumentsFunctions
     {
         public double Calculator(double firstValue, double secondValue)
         {
+            if (secondValue < 0 || firstValue < 0)
+            {
+                throw new Exception("Используй неотрицательные числа");
+            }
             return Math.Pow(firstValue * secondValue, 1.0 / 2.0);
         }
     }

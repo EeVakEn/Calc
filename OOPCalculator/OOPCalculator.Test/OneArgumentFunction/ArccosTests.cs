@@ -20,6 +20,12 @@ namespace OOPCalculator.Test.OneArgumentFunction
             var actualResult = calculator.Calculate(arOne);
             Assert.AreEqual(expected, actualResult, 0.001);
         }
-        
+        [Test]
+        public void NegativeCalculateTest()
+        {
+            var calculator = new Arccos();
+            Assert.Throws<System.Exception>(() => calculator.Calculate(-4));
+        }
+
     }
 }

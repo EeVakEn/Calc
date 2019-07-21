@@ -21,5 +21,11 @@ namespace OOPCalculator.Test.TwoArgumentFunction
             var actualResult = calculator.Calculator(arOne, arTwo);
             Assert.AreEqual(expected, actualResult);
         }
+        [Test]
+        public void NegativeCalculateTest()
+        {
+            var calculator = new GeometryMean();
+            Assert.Throws<System.Exception>(() => calculator.Calculator(-1, 1));
+        }
     }
 }

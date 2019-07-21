@@ -20,5 +20,11 @@ namespace OOPCalculator.Test.TwoArgumentFunction
             double result = calculator.Calculator(6, 3);
             Assert.AreEqual(2, result);
         }
+        [Test]
+        public void NegativeCalculateTest()
+        {
+            var calculator = new DivisionCalculator();
+            Assert.Throws<System.Exception>(() => calculator.Calculator(2, 0));
+        }
     }
 }

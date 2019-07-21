@@ -18,5 +18,11 @@ namespace OOPCalculator.Test.TwoArgumentFunction
             double result = calculator.Calculator(4, 2);
             Assert.AreEqual(2, result);
         }
+        [Test]
+        public void NegativeCalculateTest()
+        {
+            var calculator = new XInReverseY();
+            Assert.Throws<System.Exception>(() => calculator.Calculator(2, 0));
+        }
     }
 }

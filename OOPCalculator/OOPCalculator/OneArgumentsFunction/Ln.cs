@@ -11,6 +11,10 @@ namespace OOPCalculator.OneArgumentsFunction
     {
         public double Calculate(double firstValue)
         {
+            if (firstValue < 0)
+            {
+                throw new Exception("Значение должно быть больше 0");
+            }
             return Math.Log(firstValue);
         }
     }

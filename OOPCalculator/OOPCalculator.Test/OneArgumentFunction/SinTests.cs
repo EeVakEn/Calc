@@ -19,5 +19,6 @@ namespace OOPCalculator.Test.OneArgumentFunction
             double result = calculator.Calculate(0);
             Assert.AreEqual(0, result);
         }
+     
     }
 }
