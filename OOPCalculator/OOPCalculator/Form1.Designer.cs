@@ -47,7 +47,7 @@
             this.Ln = new System.Windows.Forms.Button();
             this.XInY = new System.Windows.Forms.Button();
             this.XInReverseY = new System.Windows.Forms.Button();
-            this.log10 = new System.Windows.Forms.Button();
+            this.Log10 = new System.Windows.Forms.Button();
             this.AMean = new System.Windows.Forms.Button();
             this.GMean = new System.Windows.Forms.Button();
             this.ExpInX = new System.Windows.Forms.Button();
@@ -255,16 +255,16 @@
             this.XInReverseY.UseVisualStyleBackColor = true;
             this.XInReverseY.Click += new System.EventHandler(this.TwoArgumentClick);
             // 
-            // log10
+            // Log10
             // 
-            this.log10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.log10.Location = new System.Drawing.Point(218, 181);
-            this.log10.Name = "log10";
-            this.log10.Size = new System.Drawing.Size(66, 38);
-            this.log10.TabIndex = 0;
-            this.log10.Text = "log10";
-            this.log10.UseVisualStyleBackColor = true;
-            this.log10.Click += new System.EventHandler(this.OneArgumentClick);
+            this.Log10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Log10.Location = new System.Drawing.Point(218, 181);
+            this.Log10.Name = "Log10";
+            this.Log10.Size = new System.Drawing.Size(66, 38);
+            this.Log10.TabIndex = 0;
+            this.Log10.Text = "log10";
+            this.Log10.UseVisualStyleBackColor = true;
+            this.Log10.Click += new System.EventHandler(this.OneArgumentClick);
             // 
             // AMean
             // 
@@ -310,7 +310,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ExpInX);
-            this.Controls.Add(this.log10);
+            this.Controls.Add(this.Log10);
             this.Controls.Add(this.XInReverseY);
             this.Controls.Add(this.Arcctg);
             this.Controls.Add(this.Arctan);
@@ -356,7 +356,7 @@
         private System.Windows.Forms.Button Ln;
         private System.Windows.Forms.Button XInY;
         private System.Windows.Forms.Button XInReverseY;
-        private System.Windows.Forms.Button log10;
+        private System.Windows.Forms.Button Log10;
         private System.Windows.Forms.Button AMean;
         private System.Windows.Forms.Button GMean;
         private System.Windows.Forms.Button ExpInX;

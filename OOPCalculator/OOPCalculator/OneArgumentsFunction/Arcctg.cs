@@ -11,7 +11,7 @@ namespace OOPCalculator.OneArgumentsFunction
     {
         public double Calculate(double firstValue)
         {
-            return Math.Atan(firstValue);
+            return Math.PI / 2 - Math.Atan(firstValue);
         }
     }
 }

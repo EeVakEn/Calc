@@ -13,13 +13,13 @@ namespace OOPCalculator.Test.TwoArgumentFunction
     {
         [TestCase("Add", typeof(AdditionCalculator))]
         [TestCase("Subtraction", typeof(SubtractionCalculator))]
-        [TestCase("Multiplication", typeof(MultplyCalculator))]
+        [TestCase("Multiply", typeof(MultplyCalculator))]
         [TestCase("Divide", typeof(DivisionCalculator))]
         [TestCase("AMean", typeof(ArithmeticMean))]
         [TestCase("GMean", typeof(GeometryMean))]
         public void CalculateTest(string name, Type type)
         {
-            var calculator = TwoArgumentsFactory.CreateCalc(name);
+            var calculator = TwoArgumentFactory.CreateCalculator(name);
             Assert.IsInstanceOf(type, calculator);
         }
     }

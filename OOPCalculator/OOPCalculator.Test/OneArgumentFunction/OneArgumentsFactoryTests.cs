@@ -22,7 +22,7 @@ namespace OOPCalculator.Test.OneArgumentFunction
         [TestCase("Arcctg", typeof(Arcctg))]
         [TestCase("Ln", typeof(Ln))]
         [TestCase("Log10", typeof(Log10))]
-        [TestCase("e^x", typeof(ExpLnX))]
+        [TestCase("ExpInX", typeof(ExpLnX))]
         public void CalculateTest(string name, Type type)
         {
             var calculator = OneArgumentFactory.CreateCalc(name);

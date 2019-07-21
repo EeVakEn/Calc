@@ -16,9 +16,9 @@ namespace OOPCalculator.OneArgumentsFunction
                     return new Sin();
                 case "Cos":
                     return new Cos();
-                case "ln":
+                case "Ln":
                     return new Ln();
-                case "log10":
+                case "Log10":
                     return new Log10();
                 case "Arccos":
                     return new Arccos();
@@ -28,6 +28,8 @@ namespace OOPCalculator.OneArgumentsFunction
                     return new ExpLnX();
                 case "Tan":
                     return new Tan();
+                case "Arcctg":
+                    return new Arcctg();
                 case "Arctan":
                     return new Arctan();
                 case "Ctg":
