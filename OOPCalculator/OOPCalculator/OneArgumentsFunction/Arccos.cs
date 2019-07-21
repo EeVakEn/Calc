@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace OOPCalculator.OneArgumentsFunction
 {
+/// <summary>
+/// Arccos 
+/// </summary>
     public class Arccos : I1ArgumentCalculator
 
     {
